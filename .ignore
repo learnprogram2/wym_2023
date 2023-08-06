@@ -5,3 +5,6 @@ leetcode/Solution.java
 build.sh
 
 system/0.\ Books/*
+
+
+*.DS_Store
