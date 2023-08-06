@@ -7,4 +7,4 @@ build.sh
 system/0.\ Books/*
 
 
-*.DS_Store
+.DS_Store
