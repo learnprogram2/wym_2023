@@ -58,14 +58,28 @@ I believe that I can lead a fulfilling life in Germany, because I identify with 
 
 
 
+# New Requirements
+
+- 计划逗留时间和日程安排 
+
+- 感兴趣的工作领域 
+- 将要竞聘的公司
 
 
-# chat ai 改
 
-，
-
+# chat ai optimize
 
 
 
 
-..
+
+
+
+
+
+
+
+
+
+
+
