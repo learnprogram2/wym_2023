@@ -1,0 +1,92 @@
+@CHARSET "ISO-8859-1";
+
+#logo-app .logotext {
+	margin: 0.5em 0 0 0;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 20px;
+	font-family: arial, helvetica, sans-serif;
+}
+
+a.arrow {
+	background: url(../images/arrowLink.gif) no-repeat;
+	background-position: left;
+	padding-left: 7px;
+	font-size: 110%;
+}
+
+div.categoryHeader {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid;
+	border-color: #658DC6;
+	background-color: #F3F8FF;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+}
+
+div.categoryHeader p {
+	font-size: 120%;
+}
+
+div.categoryHeaderSmall {
+	padding: 5px;
+	margin-bottom: 5px;
+	border: 1px solid;
+	border-color: #658DC6;
+	background-color: #F3F8FF;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+}
+
+div.categoryHeaderSmall p {
+	font-size: 100%;
+	margin-bottom: 5px;
+}
+
+form.top div.input span.hint {
+	width: 100%;
+	margin: 0 0 0 0%;
+	display: block;
+}
+
+form.top span.hint,span.unit {
+	font-size: 10px;
+	line-height: 15px;
+}
+
+#content ul.buttonbar {
+	color: red;
+	margin-left: 0;
+	margin-bottom: 5px;
+}
+
+#content .buttonbar li {
+	display: inline;
+	list-style: none;
+	margin-right: 10px;
+}
+
+#content .buttonbar li a,li a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px solid;
+	padding: 3px 10px;
+	border-color: #658DC6;
+	background-color: #F3F8FF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#content .buttonbar li a:hover {
+	background: #5d9ddd;
+	border: 1px solid #2a7ecd;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+

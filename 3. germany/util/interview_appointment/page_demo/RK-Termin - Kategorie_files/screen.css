@@ -1,0 +1,16 @@
+@import url(screen-extended.css);
+@import url(displaytag.css);
+/* = input errors
+------------------------------------------------------------------------------------ */
+
+div.error input,
+div.error textarea,
+div.error select {
+	border: 1px solid #f00;
+}
+
+div.error label,
+div.error span.unit,
+div.error span.hint {
+	color: #f00;	
+}

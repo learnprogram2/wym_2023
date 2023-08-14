@@ -1,0 +1,136 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<base href=".">
+	<link rel="stylesheet" type="text/css" href="./RK-Termin - Kategorie_files/jquery-ui-1.11.4.custom.min.css">
+	<script type="text/javascript" src="./RK-Termin - Kategorie_files/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="./RK-Termin - Kategorie_files/jquery-ui-1.11.4.custom.min.js"></script>
+	<script type="text/javascript">
+		function checkKey(event) {
+			if (event.keyCode == 13) {
+				document.appointment_captcha_month.action = "extern/appointment_showMonth.do";
+				document.appointment_captcha_month.submit();
+				event.preventDefault();
+			}
+		}
+	</script>
+	<script language="javascript" type="text/javascript">
+
+		$(function () {
+			$("#commit-request").dialog({
+				resizable: false,
+				height: 200,
+				width: 350,
+				modal: true,
+				autoOpen: false,
+				buttons: {
+					/* none */
+				},
+				close: function (event, ui) {
+					$('#commit-request').dialog('open');
+				}
+			});
+			$("#commit-request-progressbar").progressbar({
+				value: false
+			});
+		});
+
+		function startCommitRequest(event) {
+
+			$("#commit-request").css('cursor', 'progress');
+
+			setTimeout("innerStartCommitRequest()", 500);
+
+			return true;
+
+		}
+
+		function innerStartCommitRequest() {
+			$('#commit-request').dialog('open');
+		}
+
+	</script>
+</head>
+
+<body>
+	<div id="global">
+		<div id="main" class="l-s">
+
+			<div id="content">
+
+				<div class="wrapper">
+
+					<form id="appointment_captcha_month" name="appointment_captcha_month"
+						onsubmit="startCommitRequest();"
+						action="https://service2.diplo.de/rktermin/extern/appointment_showMonth.do" method="post"
+						class="top">
+
+						<div>
+
+							<captcha>
+								<div id="_293926295"
+									style="background:white url(&#39;data:image/jpg;base64,datadatadatadatadatadatadatadatadatadata) no-repeat scroll left top;width:350px;height:50px;margin:2em;display:block;">
+									&nbsp;</div>
+							</captcha>
+
+							<div class="input submit left">
+								<input type="submit" value="Load another picture"
+									id="appointment_captcha_month_refreshcaptcha"
+									name="action:appointment_refreshCaptchamonth">
+							</div>
+
+						</div>
+
+						<div id="wwgrp_appointment_captcha_month_captchaText" class="input text s">
+							<div id="wwlbl_appointment_captcha_month_captchaText" class="wwlbl">
+								<label for="appointment_captcha_month_captchaText" class="label"> Please enter here the
+									text you see in the picture above:
+								</label>
+							</div>
+							<div id="wwctrl_appointment_captcha_month_captchaText">
+								<input type="text" name="captchaText" value=""
+									id="appointment_captcha_month_captchaText" class="input text s"
+									onkeypress="checkKey(event)">
+							</div>
+						</div>
+
+						<!--之后输入的-->
+						<input type="hidden" name="rebooking" value="" id="appointment_captcha_month_rebooking">
+						<input type="hidden" name="token" value="" id="appointment_captcha_month_token">
+						<input type="hidden" name="lastname" value="" id="appointment_captcha_month_lastname">
+						<input type="hidden" name="firstname" value="" id="appointment_captcha_month_firstname">
+						<input type="hidden" name="email" value="" id="appointment_captcha_month_email">
+						<input type="hidden" name="locationCode" value="shan"
+							id="appointment_captcha_month_locationCode">
+						<input type="hidden" name="realmId" value="96" id="appointment_captcha_month_realmId">
+						<input type="hidden" name="categoryId" value="558" id="appointment_captcha_month_categoryId">
+						<input type="hidden" name="openingPeriodId" value=""
+							id="appointment_captcha_month_openingPeriodId">
+						<input type="hidden" name="date" value="" id="appointment_captcha_month_date">
+						<input type="hidden" name="dateStr" value="" id="appointment_captcha_month_dateStr">
+
+
+
+
+
+
+
+
+
+						<div class="input submit left">
+							<input type="submit" value="Continue" id="appointment_captcha_month_appointment_showMonth"
+								name="action:appointment_showMonth">
+							<input type="submit" value="Cancel" id="appointment_captcha_month_choose_category"
+								name="action:choose_category">
+						</div>
+					</form>
+
+
+
+
+				</div> <!-- end: #main -->
+			</div>
+
