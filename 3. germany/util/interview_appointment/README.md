@@ -26,3 +26,17 @@
 captcha的tag里面就是验证码
 
 `service2.diplo.de/rktermin/extern/appointment_showMonth.do`上海北京是一样的，只是后面的地区之类的参数会变。
+
+```go
+// api: 
+// method: post
+// param:
+//   chengdu: locationCode=cheng&realmId=170&categoryId=733
+//   guangzhou: locationCode=kant&realmId=352&categoryId=577
+//   shanghai: 
+//   beijing: 
+// headers:
+
+// body:
+
+```
