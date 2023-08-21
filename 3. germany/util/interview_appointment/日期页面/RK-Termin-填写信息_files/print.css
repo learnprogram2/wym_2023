@@ -1,0 +1,201 @@
+body {
+	background: #fff;
+	color: #000;
+	font-family: verdana, sans-serif;
+}
+
+#nav-main, 
+#nav-meta, 
+#nav-sub,
+#nav-user,
+#footer {
+	display: none;	
+}
+
+#header {
+	height: 120px;
+}
+
+#logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 220px;	
+}
+
+#logo-app {
+	margin: 0 0 0 240px;
+}
+
+#logo-app img {
+	display: none;	
+}
+
+#logo-app h1 {
+	float: left;
+	width: auto;
+	margin: 20px 0 0 0;
+	font-weight: bold;
+	font-size: 18pt;
+	line-height: 20pt;
+	font-family: arial, helvetica, sans-serif;
+}
+
+#logo-app a {
+	color: #000;
+	text-decoration: none;
+}
+
+
+#content {
+	width: 100%;	
+}
+
+p, li, dt, dd, td, th, label, address {	
+	font-size: 11pt;
+	line-height: 15pt;	
+}
+
+p, 
+table {
+	margin: 0 0 15pt 0;	
+}
+
+h2 {
+	margin: 0 0 15pt 0;
+	border-bottom: 1pt solid #000;
+	font-size: 13pt;
+	line-height: 15pt;
+	font-weight: bold;
+}
+
+h3 {
+	margin: 0 0 15pt 0;
+	font-size: 11pt;
+	line-height: 15pt;
+	font-weight: bold;
+}
+
+h4 {
+	margin: 0 0 15pt 0;
+	font-size: 10pt;
+	line-height: 15pt;
+	font-weight: bold;
+}
+
+h5 {
+	margin: 0 0 15pt 0;
+	font-size: 9pt;
+	line-height: 15pt;
+	font-weight: bold;
+}
+
+h6 {
+	margin: 0 0 15pt 0;
+	font-size: 9pt;
+	line-height: 15pt;
+	font-weight: normal;
+}
+
+table {
+	width: 100%;
+}
+
+th, td {
+	border-bottom: 1pt solid #bacfef;
+	padding: 7pt 10pt 7pt;	
+	text-align: left;
+}
+
+th {
+	font-weight: bold;	
+}
+
+#content ol {
+	margin: 0 0 15pt 20pt;
+	list-style-type: decimal;	
+}
+
+#content ol ol {
+	margin: 0 0 0 20pt;	
+}
+
+#content ul {
+	margin: 0 0 15pt 20pt;
+	list-style-type: circle;	
+}
+
+#content ul ul {
+	margin: 0 0 0 20pt;	
+}
+
+#content dl {
+	margin: 0;
+}
+
+#content dt {
+	float: left;
+	width: 20%;
+	margin: 0 0 15pt 0;
+	text-align: right;
+	font-style: italic;
+	color: #666;
+}
+
+#content dd {
+	float: left;
+	width: 78%;
+	margin: 0 0 15pt 0;
+	padding: 0 5pt;		
+}
+
+#content a {
+	color: #06c;
+}
+
+#content a:hover {
+	text-decoration: none;	
+}
+
+#content a:visited {
+	color: #80a7e0;
+}
+
+/* = images */
+
+#content div.illustration {
+	border: 1pt solid #000;	
+}
+
+#content div.illustration div.image {
+	float: left;
+	border-bottom: 1pt solid #000;	
+}
+
+#content div.illustration div.image img {
+	float: left;
+}
+
+#content div.illustration-left {
+	float: left;
+	width: auto;
+	margin: 0 10pt 5pt 0;
+}
+
+#content div.illustration-right {
+	float: right;
+	width: auto;
+	margin: 0 0 5pt 10pt;
+}
+
+#content div.illustration div.description {
+	clear: left;
+	padding: 5pt;	
+	background: #fff;
+}
+
+#content div.illustration div.description p {
+	margin: 0;
+	font-size: 10pt;
+	line-height: 15pt;		
+}

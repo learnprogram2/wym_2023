@@ -13,6 +13,8 @@ Prepares before starting to a job interview
   - 
 
 - CV
+  - after conclude all my project
+
 
 
 
