@@ -1,18 +1,22 @@
 import base64
 import requests
 import re
+from requests.sessions import Session
 
 
-
-def query_page(url):
+def query_page(session:Session,url):
     # Send POST request to get HTML page
-    response = requests.post(url,
-                             headers={
-                                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-                                 "Content-Type": "application/x-www-form-urlencoded"
-                             }, data={})
-    if response.status_code != 200:
-        print("POST request failed:", response.status_code)
+    try:
+        response = session.post(url,
+                                headers={
+                                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+                                    "Content-Type": "application/x-www-form-urlencoded"
+                                }, data= {},
+                                    timeout=4,)
+        if response.status_code != 200:
+            print("POST request failed:", response.status_code)
+            return ""
+    except:
         return ""
 
     html = response.text
