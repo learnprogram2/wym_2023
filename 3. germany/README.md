@@ -1,4 +1,13 @@
+**Current：**
 
+- important materials
+- appointment visa interview（January、February）
+- Job_skills:
+  - English
+  - Working Skill
+  - Software Knowledge
+  - Coding
+- Job_searching for materials: one or two.
 
 
 
@@ -52,6 +61,18 @@
 ## Time line
 
 23[week33 - 54]
+
+
+
+
+
+### 0829：week34
+
+当下，几乎什么也没推动。我想慢慢转身，向前。没有向前，不知道转没有转身。
+
+
+
+
 
 
 

@@ -5,10 +5,15 @@ Prepares before starting to a job interview
 - English
   - 
 - Software Knowledge
-  - 
+  - 服务端的知识体系
 - Project experience
   - Design 
   - Introduce
+  - > web: https://www.pdai.tech/md/arch/arch-x-overview.html
+    >
+    > 经典： https://github.com/checkcheckzz/system-design-interview#toc
+    >
+    > https://github.com/donnemartin/system-design-primer
 - Coding
   - 
 
