@@ -1,5 +1,11 @@
 
 
+go常见问题: https://go.dev/doc/faq
+
+
+
+
+
 
 ## 资源：
 1. [Go语言的遗产](https://tonybai.com/2019/11/04/the-legacy-of-go/)
