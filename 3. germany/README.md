@@ -8,6 +8,7 @@
   - Software Knowledge
   - Coding
 - Job_searching for materials: one or two.
+  ![23_todo_list](README.assets/23_todo_list.png)
 
 
 
@@ -31,8 +32,6 @@
 
 ## Time arrange
 
-- ~08.23
-  - make deal,know what she thinks & plans
 
 - ~01.01
   - important materials
@@ -66,16 +65,24 @@
 
 23[week33 - 54]
 
-
-
-
-
-
-
 ### 0910：week35
-**本周任务：**
 
-**下周TODO：**
+- 搜索经验、问问题，调整计划, 预约
+- 材料list
+  - 申请表-翻译资料
+- ——点
+  - Software-技术文章-知识体系图
+  - Coding： leetcode， 项目demo
+  - Project： system-design，有什么项目
+  - software：
+    - Go
+    - 知识体系， java
+  - English：
+  - materials：
+
+
+![23_todo_list](README.assets/23_todo_list.png)
+
 
 
 
