@@ -19,7 +19,7 @@ def main():
     config = consts.ShanghaiConfig
     url = config["url"] #consts.Url+consts.UrlEnd_shanghai
     # data str: 23.10.2023
-    config["dateStr"] = '02.10.2023'
+    config["dateStr"] = '07.10.2023'
 
     while True:
         session = requests.Session()

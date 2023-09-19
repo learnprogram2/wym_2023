@@ -1,13 +1,13 @@
 package ocr
 
-import (
-	"github.com/otiai10/gosseract/v2"
-)
+// import "github.com/otiai10/gosseract"
 
-var OcrCli *gosseract.Client
+//"github.com/otiai10/gosseract/v2"
+
+// var OcrCli *gosseract.Client
 
 func Init() {
 	// ocr scan
-	OcrCli = gosseract.NewClient()
+	//OcrCli = gosseract.NewClient()
 
 }
