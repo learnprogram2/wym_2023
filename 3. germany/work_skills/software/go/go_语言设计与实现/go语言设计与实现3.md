@@ -192,31 +192,59 @@ P:
 
   ![2020-02-29-15829868066452-segregated-list](go语言设计与实现3.assets/2020-02-29-15829868066452-segregated-list.png)
 
+内存分配器使用类似 TCMalloc 的分配策略将对象根据大小分类，并设计多层级的组件提高内存分配器的性能
 
 
 
+### 7.1 垃圾回收器
+
+Mark-Sweep 是最常见的, 没有整理
 
 
 
+> Go 语言垃圾收集器的实现非常复杂, 比gpm processor复杂
+>
+> 垃圾收集是一门非常古老的技术，它的执行速度和利用率很大程度上决定了程序的运行速度，Go 语言为了实现高性能的并发垃圾收集器，使用三色抽象、并发增量回收、混合写屏障、调步算法以及用户程序协助等机制将垃圾收集的暂停时间优化至毫秒级以下
 
 
 
+### 7.3 栈空间管理
+
+栈区的内存一般由编译器自动分配和释放，其中存储着函数的入参以及局部变量，这些参数会随着函数的创建而创建，函数的返回而消亡.
+
+基本都是由编译器完成的
+
+栈寄存器是 CPU 寄存器中的一种，它的主要作用是跟踪函数的调用栈
+
+- Go 语言的汇编代码包含 BP 和 SP 两个栈寄存器，它们分别存储了栈的基址指针和栈顶的地址
+
+  <img src="go语言设计与实现3.assets/2020-03-23-15849514795843-stack-registers.png" alt="2020-03-23-15849514795843-stack-registers" style="zoom:25%;" />
+
+栈区内存都是从高地址向低地址扩展的，当应用程序申请或者释放栈内存时只需要修改 SP 寄存器的值，这种线性的内存分配方式与堆内存相比更加快速，仅会带来极少的额外开销。
+
+**线程栈:**
+
+Linux 操作系统中执行 `pthread_create` 系统调用，进程会启动一个新的线程, 会创建默认大小的线程栈, x86_64=2mb
+
+线程和进程都是代码执行的上下文[4](https://draveness.me/golang/docs/part3-runtime/ch07-memory/golang-stack-management/#fn:4)，但是如果一个应用程序包含成百上千个执行上下文并且每个上下文都是线程，会占用大量的内存空间并带来其他的额外开销，Go 语言在设计时认为执行上下文是轻量级的，所以它在用户态实现 Goroutine 作为执行上下文
+
+**逃逸分析:**
+
+**栈内存空间:**
+
+1. v1.0 ~ v1.1 — 最小栈内存空间为 4KB；
+2. v1.2 — 将最小栈内存提升到了 8KB[7](https://draveness.me/golang/docs/part3-runtime/ch07-memory/golang-stack-management/#fn:7)；
+3. v1.3 — 使用**连续栈**替换之前版本的分段栈[8](https://draveness.me/golang/docs/part3-runtime/ch07-memory/golang-stack-management/#fn:8)；
+4. v1.4 — 将最小栈内存降低到了 2KB[9](https://draveness.me/golang/docs/part3-runtime/ch07-memory/golang-stack-management/#fn:9)；
 
 
 
+**栈操作:**
 
+1. 编译器会在编译阶段会通过 [`cmd/internal/obj/x86.stacksplit`](https://draveness.me/golang/tree/cmd/internal/obj/x86.stacksplit) 在调用函数前插入 [`runtime.morestack`](https://draveness.me/golang/tree/runtime.morestack) 函数；
+2. 运行时在创建新的 Goroutine 时会在 [`runtime.malg`](https://draveness.me/golang/tree/runtime.malg) 中调用 [`runtime.stackalloc`](https://draveness.me/golang/tree/runtime.stackalloc) 申请新的栈内存，并在编译器插入的 [`runtime.morestack`](https://draveness.me/golang/tree/runtime.morestack) 中检查栈空间是否充足；
 
-
-
-
-
-
-
-
-
-
-
-
+栈初始化:
 
 
 
