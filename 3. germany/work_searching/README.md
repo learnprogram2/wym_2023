@@ -34,11 +34,15 @@ Meantime:
 
 
 
+https://www.pramp.com/#/
 
 
 
 
 
+upwork
 
 
 
+- 过去公司的成长
+- 给现在公司带来的,自己希望获得的
