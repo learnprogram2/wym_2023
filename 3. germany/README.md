@@ -63,6 +63,39 @@
 
 ## Time line
 
+
+### 1030： week43
+
+下周TODO：
+
+- 搜索经验、问问题，调整计划, 预约
+
+- 材料list-Materials
+
+  - 申请表-翻译资料
+
+- ——点
+
+  - English：-
+  - Coding： leetcode， 项目demo
+    - TestDriven
+  - Project：
+    - system-design，有什么项目
+    - 项目经验总结
+  - software：
+    - Go -
+    - 知识体系， java
+    - 技术文章-知识体系图
+
+  ![23_todo_list](README.assets/23_todo_list.png)
+
+**这周总结：**
+
+最近很累，重新回来。
+
+
+
+
 ### 1008： week39
 
 下周TODO：
