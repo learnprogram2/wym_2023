@@ -34,6 +34,7 @@
 
 
 - ~01.01
+  
   - important materials
   - appointment visa interview（January、February）
   - Job_skills:
@@ -42,7 +43,7 @@
     - Software Knowledge
     - Coding
   - Job_searching for materials: one or two.
-
+  
 - ~04.01
   - Job_skills
   - Job_searching
@@ -62,6 +63,64 @@
 
 
 ## Time line
+
+
+
+### 1127: week47
+
+<img src="README.assets/image-20231127204419731-1089068.png" alt="紧急的事情整理" style="zoom: 25%;" />
+
+**紧急的, 重要的:**
+
+- 工作: BCP开发
+- 工作: 学习工作技能
+- 生活: 读书
+
+**不紧急的, 重要的:**
+
+- 工作: 面试技巧
+- 未来可能: 材料准备, 找工作联系
+- 生活: 记录感受
+- 生活: 维护友情, 亲情
+- 生活: 尝试新东西, 切换状态
+
+**紧急的, 不重要的:**
+
+- 感情: 接触新的异性
+- 感情: 笔友
+
+**不紧急, 不重要的:**
+
+- 未来可能: 落户
+- 未来可能: 凑钱买房
+
+
+
+
+
+- 工作: 
+  - BCP的开发
+  - 学习工作技能
+  - 面试技能
+- 未来可能
+  - 德国材料准备
+  - 德国找工作练习
+  - 落户
+  - 凑钱买房
+- 生活
+  - 读书
+  - 记录感受
+  - 维护友情, 亲情
+  - 尝试新的生活
+- 感情
+  - 接触新的异性
+  - 笔友
+
+
+
+
+
+
 
 
 ### 1030： week43
